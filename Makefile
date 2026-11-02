@@ -5,6 +5,8 @@ TARGET = main
 SOURCES = $(shell find src -type f -name '*.c')
 HEADERS = $(shell find src -type f -name '*.h')
 
+ZIPFILE = prog.zip
+
 .PHONY: build run clean
 
 build: $(TARGET)
@@ -16,4 +18,8 @@ run: build
 	./$(TARGET)
 
 clean:
-	rm $(TARGET)
+	rm $(TARGET) $(ZIPFILE)
+
+
+zip:
+	zip $(ZIPFILE) -r . -x ".git/*"
