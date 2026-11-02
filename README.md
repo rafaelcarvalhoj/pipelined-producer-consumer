@@ -1,6 +1,6 @@
 # Concurrent Three-Stage Pipeline
 
-A C/Pthreads project for a producer-transformer-consumer pipeline with two bounded buffers. The [project report](docs/relatorio.md) describes a temporary interruption of the first buffer. The pipeline stages and interruption handling are still marked as TODO in the current code.
+A C/Pthreads project for a producer-transformer-consumer pipeline with two bounded buffers. The [project report](docs/relatorio.md) describes a temporary interruption of the first buffer. Remaining work is tracked in [TODO.md](TODO.md).
 
 ## Structure
 

@@ -172,16 +172,10 @@ Conservação: 44 = 40 + 4  [OK]
 
 ## 3. Algoritmo de resolução
 
-<!-- A ser preenchido -->
-
 ---
 
 ## 4. Conclusão
 
-<!-- A ser preenchido -->
-
 ---
 
 ## 5. Referências
-
-<!-- A ser preenchido -->
