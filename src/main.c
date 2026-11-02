@@ -28,6 +28,10 @@ int main(int argc, char* argv[]){
     print_startup();
     
     arg_t * args = parse_arguments(argc, argv);
+    if (args == NULL) {
+        return -1;
+    }
+
     print_arguments(args);
 
     pipeline_config_t cfg = {
@@ -41,8 +45,7 @@ int main(int argc, char* argv[]){
     pipeline_t *p = pipeline_start(&cfg);
 
     pipeline_stop(p);
-    
-    // free
+
     pipeline_destroy(p);
     return 0;
 }
